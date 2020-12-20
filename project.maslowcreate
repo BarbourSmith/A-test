@@ -8,6 +8,32 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.42594484167517876,
+            "y": 0.4083969465648855,
+            "uniqueID": 801391,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.6414708886618998,
+            "y": 0.3511450381679389,
+            "uniqueID": 897071,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9795709908069459,
@@ -15,7 +41,21 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 801391,
+            "ap2ID": 897071
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 897071
+        }
+    ],
     "fileTypeVersion": 1,
     "filetypeVersion": 1,
     "circleSegmentSize": "3.7"
