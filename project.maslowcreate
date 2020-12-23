@@ -4,7 +4,12 @@
     "x": 0,
     "y": 0,
     "uniqueID": 862685,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "Diameter",
+            "ioValue": 10
+        }
+    ],
     "topLevel": true,
     "allAtoms": [
         {
@@ -14,6 +19,10 @@
             "y": 0.27099236641221375,
             "uniqueID": 897071,
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/862685/801391Circle"
+                },
                 {
                     "name": "height",
                     "ioValue": 30
@@ -29,9 +38,17 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 5
+                    "ioValue": 10
                 }
             ]
+        },
+        {
+            "atomType": "Input",
+            "name": "Diameter",
+            "x": 0.013333333333333334,
+            "y": 0.7137404580152672,
+            "uniqueID": 193900,
+            "ioValues": []
         },
         {
             "atomType": "Rotate",
@@ -40,6 +57,10 @@
             "y": 0.6297709923664122,
             "uniqueID": 836683,
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/862685/897071Extrude"
+                },
                 {
                     "name": "x-axis degrees",
                     "ioValue": 90
@@ -57,8 +78,8 @@
         {
             "atomType": "Union",
             "name": "Union",
-            "x": 0.7160367722165475,
-            "y": 0.6412213740458015,
+            "x": 0.693564862104188,
+            "y": 0.40458015267175573,
             "uniqueID": 191230,
             "ioValues": [
                 {
@@ -83,6 +104,10 @@
             "uniqueID": 773134,
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": "atoms/862685/836683Rotate"
+                },
+                {
                     "name": "x-axis degrees",
                     "ioValue": 0
                 },
@@ -101,7 +126,12 @@
             "name": "Output",
             "x": 0.9795709908069459,
             "y": 0.5,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "atoms/862685/191230Union"
+                }
+            ]
         }
     ],
     "allConnectors": [
@@ -125,6 +155,13 @@
             "ap2Primary": true,
             "ap1ID": 801391,
             "ap2ID": 897071
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 193900,
+            "ap2ID": 801391
         },
         {
             "ap1Name": "geometry",
