@@ -28,8 +28,12 @@
             "uniqueID": 897071,
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": "atoms/862685/801391Circle"
+                },
+                {
                     "name": "height",
-                    "ioValue": 10
+                    "ioValue": 20
                 }
             ]
         },
@@ -38,7 +42,12 @@
             "name": "Output",
             "x": 0.9795709908069459,
             "y": 0.5,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "atoms/862685/897071Extrude"
+                }
+            ]
         }
     ],
     "allConnectors": [
