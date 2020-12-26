@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "Diameter",
-            "ioValue": 10
+            "ioValue": 20
         }
     ],
     "topLevel": true,
@@ -38,7 +38,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 20
                 }
             ]
         },
@@ -59,7 +59,7 @@
             "ioValues": [
                 {
                     "name": "Diameter",
-                    "ioValue": 10
+                    "ioValue": 20
                 }
             ],
             "topLevel": false,
@@ -73,7 +73,7 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 10
+                            "ioValue": 20
                         }
                     ]
                 },
