@@ -7,11 +7,27 @@
     "ioValues": [
         {
             "name": "Diameter",
-            "ioValue": 20
+            "ioValue": 10
         }
     ],
     "topLevel": true,
     "allAtoms": [
+        {
+            "atomType": "Constant",
+            "name": "Constant",
+            "x": 0.09941520467836258,
+            "y": 0.33969465648854963,
+            "uniqueID": 148363,
+            "ioValues": [
+                {
+                    "name": "number",
+                    "ioValue": 20
+                }
+            ],
+            "evolve": false,
+            "min": 0,
+            "max": 20
+        },
         {
             "atomType": "Equation",
             "name": "Equation",
@@ -21,7 +37,7 @@
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 20
+                    "ioValue": 10
                 },
                 {
                     "name": "y",
@@ -47,15 +63,15 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 40
+                    "ioValue": 30
                 }
             ]
         },
         {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.9795709908069459,
-            "y": 0.5,
+            "x": 0.9678362573099415,
+            "y": 0.4732824427480916,
             "uniqueID": 628110,
             "ioValues": [
                 {
@@ -66,6 +82,13 @@
         }
     ],
     "allConnectors": [
+        {
+            "ap1Name": "number",
+            "ap2Name": "y",
+            "ap2Primary": false,
+            "ap1ID": 148363,
+            "ap2ID": 999985
+        },
         {
             "ap1Name": "result",
             "ap2Name": "diameter",
