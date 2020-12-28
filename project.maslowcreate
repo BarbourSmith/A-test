@@ -112,16 +112,28 @@
             "uniqueID": 132654,
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": "atoms/862685/526286/654706Circle"
+                },
+                {
                     "name": "height",
                     "ioValue": 10
                 }
             ]
         },
         {
+            "atomType": "Input",
+            "name": "Diameter",
+            "x": 0.013333333333333334,
+            "y": 0.7137404580152672,
+            "uniqueID": 193900,
+            "ioValues": []
+        },
+        {
             "atomType": "GitHubMolecule",
             "name": "Proportional Shift",
-            "x": 0.5847953216374269,
-            "y": 0.40458015267175573,
+            "x": 0.6491228070175439,
+            "y": 0.3091603053435114,
             "uniqueID": 255887,
             "projectID": "187933479",
             "ioValues": [
@@ -144,18 +156,52 @@
             ]
         },
         {
-            "atomType": "Input",
-            "name": "Diameter",
-            "x": 0.013333333333333334,
-            "y": 0.7137404580152672,
-            "uniqueID": 193900,
-            "ioValues": []
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.4395711500974659,
+            "y": 0.66793893129771,
+            "uniqueID": 740738,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/862685/132654Extrude"
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 20
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
+            "atomType": "Union",
+            "name": "Union",
+            "x": 0.5955165692007797,
+            "y": 0.6984732824427481,
+            "uniqueID": 843067,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
+                }
+            ]
         },
         {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.9678362573099415,
-            "y": 0.4732824427480916,
+            "x": 0.9629629629629629,
+            "y": 0.46564885496183206,
             "uniqueID": 628110,
             "ioValues": [
                 {
@@ -181,11 +227,18 @@
             "ap2ID": 255887
         },
         {
-            "ap1Name": "Geometry",
-            "ap2Name": "number or geometry",
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 1",
             "ap2Primary": false,
-            "ap1ID": 255887,
-            "ap2ID": 628110
+            "ap1ID": 132654,
+            "ap2ID": 843067
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 132654,
+            "ap2ID": 740738
         },
         {
             "ap1Name": "number or geometry",
@@ -193,6 +246,20 @@
             "ap2Primary": false,
             "ap1ID": 193900,
             "ap2ID": 526286
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 255887,
+            "ap2ID": 628110
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 2",
+            "ap2Primary": false,
+            "ap1ID": 740738,
+            "ap2ID": 843067
         }
     ],
     "fileTypeVersion": 1,
