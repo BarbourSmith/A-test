@@ -112,10 +112,6 @@
             "uniqueID": 132654,
             "ioValues": [
                 {
-                    "name": "geometry",
-                    "ioValue": "atoms/862685/526286/654706Circle"
-                },
-                {
                     "name": "height",
                     "ioValue": 10
                 }
@@ -156,6 +152,23 @@
             ]
         },
         {
+            "atomType": "Union",
+            "name": "Union",
+            "x": 0.5974658869395711,
+            "y": 0.4541984732824427,
+            "uniqueID": 843067,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
             "atomType": "Translate",
             "name": "Translate",
             "x": 0.4395711500974659,
@@ -181,12 +194,24 @@
             ]
         },
         {
-            "atomType": "Union",
-            "name": "Union",
-            "x": 0.5955165692007797,
-            "y": 0.6984732824427481,
-            "uniqueID": 843067,
+            "atomType": "ShrinkWrap",
+            "name": "Shrink Wrap",
+            "x": 0.6072124756335283,
+            "y": 0.7404580152671755,
+            "uniqueID": 830982,
             "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": "atoms/862685/740738Translate"
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": "atoms/862685/132654Extrude"
+                },
+                {
+                    "name": "3D shape 3",
+                    "ioValue": ""
+                },
                 {
                     "name": "3D shape 1",
                     "ioValue": 10
@@ -194,8 +219,13 @@
                 {
                     "name": "3D shape 2",
                     "ioValue": 10
+                },
+                {
+                    "name": "3D shape 3",
+                    "ioValue": 10
                 }
-            ]
+            ],
+            "closedSelection": 0
         },
         {
             "atomType": "Output",
@@ -203,12 +233,7 @@
             "x": 0.9629629629629629,
             "y": 0.46564885496183206,
             "uniqueID": 628110,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": "atoms/862685/255887/509072Translate"
-                }
-            ]
+            "ioValues": []
         }
     ],
     "allConnectors": [
@@ -241,6 +266,13 @@
             "ap2ID": 740738
         },
         {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 2",
+            "ap2Primary": false,
+            "ap1ID": 132654,
+            "ap2ID": 830982
+        },
+        {
             "ap1Name": "number or geometry",
             "ap2Name": "Diameter",
             "ap2Primary": false,
@@ -260,6 +292,13 @@
             "ap2Primary": false,
             "ap1ID": 740738,
             "ap2ID": 843067
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 740738,
+            "ap2ID": 830982
         }
     ],
     "fileTypeVersion": 1,
