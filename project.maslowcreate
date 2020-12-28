@@ -201,20 +201,16 @@
             "uniqueID": 830982,
             "ioValues": [
                 {
-                    "name": "3D shape 1",
-                    "ioValue": "atoms/862685/740738Translate"
-                },
-                {
                     "name": "3D shape 2",
                     "ioValue": "atoms/862685/132654Extrude"
                 },
                 {
                     "name": "3D shape 3",
-                    "ioValue": ""
+                    "ioValue": "atoms/862685/740738Translate"
                 },
                 {
-                    "name": "3D shape 1",
-                    "ioValue": 10
+                    "name": "3D shape 4",
+                    "ioValue": ""
                 },
                 {
                     "name": "3D shape 2",
@@ -222,6 +218,10 @@
                 },
                 {
                     "name": "3D shape 3",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 4",
                     "ioValue": 10
                 }
             ],
@@ -295,7 +295,7 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "3D shape 1",
+            "ap2Name": "3D shape 3",
             "ap2Primary": false,
             "ap1ID": 740738,
             "ap2ID": 830982
