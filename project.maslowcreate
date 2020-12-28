@@ -13,6 +13,19 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.22063329928498468,
+            "y": 0.29389312977099236,
+            "uniqueID": 801391,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 20
+                }
+            ]
+        },
+        {
             "atomType": "Extrude",
             "name": "Extrude",
             "x": 0.3687436159346272,
@@ -30,31 +43,10 @@
             ]
         },
         {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.1807967313585291,
-            "y": 0.4465648854961832,
-            "uniqueID": 801391,
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 20
-                }
-            ]
-        },
-        {
-            "atomType": "Input",
-            "name": "Diameter",
-            "x": 0.013333333333333334,
-            "y": 0.7137404580152672,
-            "uniqueID": 193900,
-            "ioValues": []
-        },
-        {
             "atomType": "Molecule",
             "name": "Molecule",
-            "x": 0.24412665985699694,
-            "y": 0.7442748091603054,
+            "x": 0.3329928498467824,
+            "y": 0.5877862595419847,
             "uniqueID": 756293,
             "ioValues": [
                 {
@@ -108,12 +100,7 @@
                     "x": 0.9795709908069459,
                     "y": 0.5,
                     "uniqueID": 254380,
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": "atoms/862685/756293/108219Extrude"
-                        }
-                    ]
+                    "ioValues": []
                 }
             ],
             "allConnectors": [
@@ -142,6 +129,14 @@
             "fileTypeVersion": 1
         },
         {
+            "atomType": "Input",
+            "name": "Diameter",
+            "x": 0.013333333333333334,
+            "y": 0.7137404580152672,
+            "uniqueID": 193900,
+            "ioValues": []
+        },
+        {
             "atomType": "Rotate",
             "name": "Rotate",
             "x": 0.4933605720122574,
@@ -150,7 +145,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "atoms/862685/756293/108219Extrude"
+                    "ioValue": "atoms/862685/756293Molecule"
                 },
                 {
                     "name": "x-axis degrees",
@@ -186,6 +181,24 @@
                     "ioValue": 10
                 }
             ]
+        },
+        {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.2972420837589377,
+            "y": 0.8091603053435115,
+            "uniqueID": 999985,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 10
+                },
+                {
+                    "name": "y",
+                    "ioValue": 20
+                }
+            ],
+            "currentEquation": "x + y"
         },
         {
             "atomType": "Rotate",
@@ -229,17 +242,24 @@
     "allConnectors": [
         {
             "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 801391,
+            "ap2ID": 897071
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "3D shape 2",
             "ap2Primary": false,
             "ap1ID": 897071,
             "ap2ID": 191230
         },
         {
-            "ap1Name": "geometry",
+            "ap1Name": "Geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
-            "ap1ID": 801391,
-            "ap2ID": 897071
+            "ap1ID": 756293,
+            "ap2ID": 836683
         },
         {
             "ap1Name": "number or geometry",
@@ -256,11 +276,11 @@
             "ap2ID": 756293
         },
         {
-            "ap1Name": "Geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 756293,
-            "ap2ID": 836683
+            "ap1Name": "number or geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 193900,
+            "ap2ID": 999985
         },
         {
             "ap1Name": "geometry",
