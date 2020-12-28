@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "Diameter",
-            "ioValue": 10
+            "ioValue": 20
         }
     ],
     "topLevel": true,
@@ -15,13 +15,13 @@
         {
             "atomType": "Molecule",
             "name": "Molecule",
-            "x": 0.36257309941520466,
-            "y": 0.42748091603053434,
+            "x": 0.361598440545809,
+            "y": 0.46183206106870234,
             "uniqueID": 526286,
             "ioValues": [
                 {
                     "name": "Diameter",
-                    "ioValue": 10
+                    "ioValue": 20
                 }
             ],
             "topLevel": false,
@@ -35,7 +35,7 @@
                     "ioValues": [
                         {
                             "name": "x",
-                            "ioValue": 10
+                            "ioValue": 20
                         },
                         {
                             "name": "y",
@@ -53,7 +53,7 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 0
+                            "ioValue": 10
                         }
                     ]
                 },
