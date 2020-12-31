@@ -118,6 +118,19 @@
             ]
         },
         {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.21761658031088085,
+            "y": 0.6374045801526718,
+            "uniqueID": 129592,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
             "atomType": "Input",
             "name": "Diameter",
             "x": 0.013333333333333334,
@@ -212,8 +225,8 @@
         {
             "atomType": "ShrinkWrap",
             "name": "Shrink Wrap",
-            "x": 0.6072124756335283,
-            "y": 0.7404580152671755,
+            "x": 0.7015544041450777,
+            "y": 0.5305343511450381,
             "uniqueID": 830982,
             "ioValues": [
                 {
@@ -244,6 +257,20 @@
             "closedSelection": 0
         },
         {
+            "atomType": "Code",
+            "name": "Code",
+            "x": 0.4518134715025906,
+            "y": 0.8702290076335878,
+            "uniqueID": 861705,
+            "ioValues": [
+                {
+                    "name": "shape",
+                    "ioValue": "atoms/862685/129592Circle"
+                }
+            ],
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(shape, height){\n  return input1.pull(20);        //return must be geometry;\n}\n\n\nreturn main(shape, height);"
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9629629629629629,
@@ -255,15 +282,6 @@
                     "ioValue": "atoms/862685/861705Code"
                 }
             ]
-        },
-        {
-            "atomType": "Code",
-            "name": "Code",
-            "x": 0.7834196891191709,
-            "y": 0.8435114503816794,
-            "uniqueID": 861705,
-            "ioValues": [],
-            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(){\n  console.log(\"this\")\n  return Ball(40)        //return must be geometry;\n}\n\nconsole.log(\"test\");\n\nreturn main();"
         }
     ],
     "allConnectors": [
@@ -301,6 +319,13 @@
             "ap2Primary": false,
             "ap1ID": 132654,
             "ap2ID": 830982
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "shape",
+            "ap2Primary": false,
+            "ap1ID": 129592,
+            "ap2ID": 861705
         },
         {
             "ap1Name": "number or geometry",
