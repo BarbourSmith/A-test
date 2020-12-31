@@ -126,7 +126,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 2
                 }
             ]
         },
@@ -215,7 +215,7 @@
             "ioValues": [
                 {
                     "name": "number",
-                    "ioValue": 10
+                    "ioValue": 30
                 }
             ],
             "evolve": false,
@@ -269,10 +269,10 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 10
+                    "ioValue": 30
                 }
             ],
-            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(shape, height){\n  return shape.pull(20);        //return must be geometry;\n}\n\n\nreturn main(shape, height);"
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(shape, height){\n  return shape.pull(height);        //return must be geometry;\n}\n\n\nreturn main(shape, height);"
         },
         {
             "atomType": "Output",
