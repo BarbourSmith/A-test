@@ -267,7 +267,12 @@
             "x": 0.9629629629629629,
             "y": 0.46564885496183206,
             "uniqueID": 628110,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "atoms/862685/861705Code"
+                }
+            ]
         }
     ],
     "allConnectors": [
@@ -321,10 +326,10 @@
             "ap2ID": 526286
         },
         {
-            "ap1Name": "Geometry",
+            "ap1Name": "geometry",
             "ap2Name": "number or geometry",
             "ap2Primary": false,
-            "ap1ID": 255887,
+            "ap1ID": 861705,
             "ap2ID": 628110
         },
         {
