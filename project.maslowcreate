@@ -157,7 +157,16 @@
             "x": 0.26528497409326424,
             "y": 0.6946564885496184,
             "uniqueID": 861705,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "Input1",
+                    "ioValue": ""
+                },
+                {
+                    "name": "Input2",
+                    "ioValue": "atoms/862685/532470Constant"
+                }
+            ],
             "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Input1, Input2){\n  console.log(\"this\")\n  return Ball(40)        //return must be geometry;\n}\n\nreturn main(Input1, Input2)"
         },
         {
@@ -201,6 +210,22 @@
                     "ioValue": 0
                 }
             ]
+        },
+        {
+            "atomType": "Constant",
+            "name": "Constant",
+            "x": 0.12849740932642487,
+            "y": 0.8587786259541985,
+            "uniqueID": 532470,
+            "ioValues": [
+                {
+                    "name": "number",
+                    "ioValue": "atoms/862685/532470Constant"
+                }
+            ],
+            "evolve": false,
+            "min": 0,
+            "max": 20
         },
         {
             "atomType": "ShrinkWrap",
@@ -252,6 +277,13 @@
             "ap2Primary": true,
             "ap1ID": 526286,
             "ap2ID": 132654
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "Input1",
+            "ap2Primary": false,
+            "ap1ID": 526286,
+            "ap2ID": 861705
         },
         {
             "ap1Name": "geometry",
@@ -308,6 +340,13 @@
             "ap2Primary": false,
             "ap1ID": 740738,
             "ap2ID": 830982
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "Input2",
+            "ap2Primary": false,
+            "ap1ID": 532470,
+            "ap2ID": 861705
         }
     ],
     "fileTypeVersion": 1,
