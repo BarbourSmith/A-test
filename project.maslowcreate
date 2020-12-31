@@ -215,7 +215,7 @@
             "ioValues": [
                 {
                     "name": "number",
-                    "ioValue": "atoms/862685/532470Constant"
+                    "ioValue": 10
                 }
             ],
             "evolve": false,
@@ -259,16 +259,20 @@
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.4518134715025906,
-            "y": 0.8702290076335878,
+            "x": 0.49326424870466323,
+            "y": 0.8816793893129771,
             "uniqueID": 861705,
             "ioValues": [
                 {
                     "name": "shape",
                     "ioValue": "atoms/862685/129592Circle"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
                 }
             ],
-            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(shape, height){\n  return input1.pull(20);        //return must be geometry;\n}\n\n\nreturn main(shape, height);"
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(shape, height){\n  return shape.pull(20);        //return must be geometry;\n}\n\n\nreturn main(shape, height);"
         },
         {
             "atomType": "Output",
@@ -347,6 +351,13 @@
             "ap2Primary": false,
             "ap1ID": 740738,
             "ap2ID": 830982
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "height",
+            "ap2Primary": false,
+            "ap1ID": 532470,
+            "ap2ID": 861705
         },
         {
             "ap1Name": "geometry",
