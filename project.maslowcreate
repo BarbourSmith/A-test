@@ -257,6 +257,19 @@
             "closedSelection": 0
         },
         {
+            "atomType": "Stl",
+            "name": "Stl",
+            "x": 0.8486017357762777,
+            "y": 0.33969465648854963,
+            "uniqueID": 261161,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/862685/830982ShrinkWrap"
+                }
+            ]
+        },
+        {
             "atomType": "Code",
             "name": "Code",
             "x": 0.49326424870466323,
@@ -358,6 +371,13 @@
             "ap2Primary": false,
             "ap1ID": 532470,
             "ap2ID": 861705
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 830982,
+            "ap2ID": 261161
         },
         {
             "ap1Name": "geometry",
