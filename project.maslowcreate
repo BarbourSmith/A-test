@@ -34,6 +34,57 @@
             ]
         },
         {
+            "atomType": "Molecule",
+            "name": "Molecule",
+            "x": 0.29604628736740596,
+            "y": 0.7213740458015268,
+            "uniqueID": 867377,
+            "ioValues": [],
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.29604628736740596,
+                    "y": 0.7213740458015268,
+                    "uniqueID": 518927,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.9807135969141755,
+                    "y": 0.5,
+                    "uniqueID": 488905,
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "atoms/862685/867377/518927Rectangle"
+                        }
+                    ]
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 518927,
+                    "ap2ID": 488905
+                }
+            ],
+            "fileTypeVersion": 1
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9629629629629629,
