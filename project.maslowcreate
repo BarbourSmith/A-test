@@ -23,8 +23,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.25747348119575697,
-            "y": 0.25190839694656486,
+            "x": 0.22840409956076133,
+            "y": 0.2567049808429119,
             "uniqueID": 698163,
             "ioValues": [
                 {
@@ -36,8 +36,8 @@
         {
             "atomType": "Translate",
             "name": "Translate",
-            "x": 0.39151398264223725,
-            "y": 0.3091603053435114,
+            "x": 0.3462664714494876,
+            "y": 0.24904214559386972,
             "uniqueID": 358759,
             "ioValues": [
                 {
@@ -57,10 +57,26 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.5766634522661523,
-            "y": 0.3931297709923664,
+            "x": 0.5226939970717422,
+            "y": 0.25287356321839083,
             "uniqueID": 361388,
             "ioValues": []
+        },
+        {
+            "atomType": "Constant",
+            "name": "Constant",
+            "x": 0.58199121522694,
+            "y": 0.32950191570881227,
+            "uniqueID": 220056,
+            "ioValues": [
+                {
+                    "name": "number",
+                    "ioValue": 10
+                }
+            ],
+            "evolve": false,
+            "min": 0,
+            "max": 20
         },
         {
             "atomType": "Extrude",
@@ -93,13 +109,29 @@
             ]
         },
         {
+            "atomType": "Constant",
+            "name": "Constant",
+            "x": 0.5292825768667643,
+            "y": 0.632183908045977,
+            "uniqueID": 804681,
+            "ioValues": [
+                {
+                    "name": "number",
+                    "ioValue": 10
+                }
+            ],
+            "evolve": false,
+            "min": 0,
+            "max": 20
+        },
+        {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.7232796486090777,
-            "y": 0.7011494252873564,
+            "x": 0.7101024890190336,
+            "y": 0.7624521072796935,
             "uniqueID": 616099,
             "ioValues": [],
-            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(inputShape, numberOfInstances, Spacing){\n  var outputShape = union(inputShape);\n  var i = 1;\n  //while(i < numberOfInstances){\n  //return  translate([5, 0, 10], Input1);\n  return outputShape;\n}\n\nreturn main(inputShape, numberOfInstances, Spacing)"
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(inputShape, numberOfInstances, Spacing){\n  var outputShape = union(inputShape);\n  var i = 1;\n  while(i < numberOfInstances){\n      outputShape = union(translate([i*Spacing, 0, 0], inputShape));\n  }\n  return outputShape;\n}\n\nreturn main(inputShape, numberOfInstances, Spacing)"
         },
         {
             "atomType": "Output",
@@ -133,6 +165,13 @@
             "ap2ID": 361388
         },
         {
+            "ap1Name": "number",
+            "ap2Name": "Spacing",
+            "ap2Primary": false,
+            "ap1ID": 220056,
+            "ap2ID": 616099
+        },
+        {
             "ap1Name": "geometry",
             "ap2Name": "geometry1",
             "ap2Primary": false,
@@ -152,6 +191,13 @@
             "ap2Primary": true,
             "ap1ID": 798006,
             "ap2ID": 119922
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "numberOfInstances",
+            "ap2Primary": false,
+            "ap1ID": 804681,
+            "ap2ID": 616099
         }
     ],
     "fileTypeVersion": 1,
