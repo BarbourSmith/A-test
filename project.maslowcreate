@@ -28,10 +28,6 @@
             "uniqueID": 698163,
             "ioValues": [
                 {
-                    "name": "geometry",
-                    "ioValue": "atoms/862685/456307Circle"
-                },
-                {
                     "name": "height",
                     "ioValue": 10
                 }
@@ -44,10 +40,6 @@
             "y": 0.3091603053435114,
             "uniqueID": 358759,
             "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "atoms/862685/698163Extrude"
-                },
                 {
                     "name": "xDist",
                     "ioValue": 5
@@ -68,16 +60,7 @@
             "x": 0.5766634522661523,
             "y": 0.3931297709923664,
             "uniqueID": 361388,
-            "ioValues": [
-                {
-                    "name": "geometry2",
-                    "ioValue": "atoms/862685/358759Translate"
-                },
-                {
-                    "name": "geometry1",
-                    "ioValue": "atoms/862685/119922Extrude"
-                }
-            ]
+            "ioValues": []
         },
         {
             "atomType": "Extrude",
@@ -86,10 +69,6 @@
             "y": 0.7175572519083969,
             "uniqueID": 119922,
             "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "atoms/862685/798006Rectangle"
-                },
                 {
                     "name": "height",
                     "ioValue": 10
@@ -112,6 +91,15 @@
                     "ioValue": 10
                 }
             ]
+        },
+        {
+            "atomType": "Code",
+            "name": "Code",
+            "x": 0.7232796486090777,
+            "y": 0.7011494252873564,
+            "uniqueID": 616099,
+            "ioValues": [],
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(inputShape, numberOfInstances, Spacing){\n  var outputShape = union(inputShape);\n  var i = 1;\n  //while(i < numberOfInstances){\n  //return  translate([5, 0, 10], Input1);\n  return outputShape;\n}\n\nreturn main(inputShape, numberOfInstances, Spacing)"
         },
         {
             "atomType": "Output",
@@ -150,6 +138,13 @@
             "ap2Primary": false,
             "ap1ID": 119922,
             "ap2ID": 361388
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "inputShape",
+            "ap2Primary": false,
+            "ap1ID": 119922,
+            "ap2ID": 616099
         },
         {
             "ap1Name": "geometry",
