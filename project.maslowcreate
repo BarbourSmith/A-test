@@ -71,7 +71,7 @@
             "ioValues": [
                 {
                     "name": "number",
-                    "ioValue": 10
+                    "ioValue": 40
                 }
             ],
             "evolve": false,
@@ -127,11 +127,20 @@
         {
             "atomType": "Code",
             "name": "Code",
+            "x": 0.7599999999999999,
+            "y": 0.40229885057471265,
+            "uniqueID": 879301,
+            "ioValues": [],
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(inputShape, numberOfInstances, Spacing){\n  console.log(\"ten\");\n  return sphere(40)        //return must be geometry;\n}\n\nreturn main(inputShape, numberOfInstances, Spacing)"
+        },
+        {
+            "atomType": "Code",
+            "name": "Code",
             "x": 0.7101024890190336,
             "y": 0.7624521072796935,
             "uniqueID": 616099,
             "ioValues": [],
-            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(inputShape, numberOfInstances, Spacing){\n  console.log(\"Begin\");\n  console.log(typeof(numberOfInstances));\n  console.log(\n  var outputShape = inputShape;//union(inputShape);\n  //var i = 1;\n  //while(i < numberOfInstances){\n  //    console.log(i);\n      //outputShape = union(translate([i*10, 0, 0], inputShape));\n  //    i++;\n  //}\n  return outputShape;\n}\n\nreturn main(inputShape, numberOfInstances, Spacing)"
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(inputShape, numberOfInstances, Spacing){\n  console.log(\"Begin\");\n  console.log(typeof(numberOfInstances));\n  var outputShape = inputShape;\n  var i = 1;\n  while(i < numberOfInstances){\n      console.log(i);\n      outputShape = union(outputShape, translate([i*Spacing, 0, 0], inputShape));\n      i++;\n  }\n  return outputShape;\n}\n\nreturn main(inputShape, numberOfInstances, Spacing)"
         },
         {
             "atomType": "Output",
