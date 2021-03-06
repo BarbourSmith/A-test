@@ -8,10 +8,23 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.2527075812274368,
+            "y": 0.5229007633587786,
+            "uniqueID": 949211,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
             "atomType": "Molecule",
             "name": "Mounting Plastic",
-            "x": 0.4026354319180088,
-            "y": 0.4732824427480916,
+            "x": 0.407942238267148,
+            "y": 0.46564885496183206,
             "uniqueID": 859560,
             "ioValues": [],
             "topLevel": false,
@@ -89,7 +102,7 @@
                     "ioValues": [
                         {
                             "name": "geometry2",
-                            "ioValue": "atoms/593463/683987/839020/322329/452792Translate"
+                            "ioValue": "atoms/862685/859560/452792Translate"
                         },
                         {
                             "name": "geometry1",
@@ -136,7 +149,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": "atoms/593463/683987/839020/322329/101528Rectangle"
+                            "ioValue": "atoms/862685/859560/101528Rectangle"
                         },
                         {
                             "name": "height",
@@ -170,7 +183,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": "atoms/593463/683987/839020/322329/173873Extrude"
+                            "ioValue": "atoms/862685/859560/173873Extrude"
                         },
                         {
                             "name": "xDist",
@@ -231,8 +244,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Bolt Pegs",
-                    "x": 0.5841874084919473,
-                    "y": 0.7366412213740459,
+                    "x": 0.5860409145607701,
+                    "y": 0.7480916030534351,
                     "uniqueID": 125555,
                     "ioValues": [],
                     "topLevel": false,
@@ -586,8 +599,8 @@
                         {
                             "atomType": "Molecule",
                             "name": "Cut Away",
-                            "x": 0.6608084358523726,
-                            "y": 0.8623853211009175,
+                            "x": 0.6630565583634176,
+                            "y": 0.8625954198473282,
                             "uniqueID": 160588,
                             "ioValues": [],
                             "topLevel": false,
