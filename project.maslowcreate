@@ -1034,6 +1034,15 @@
             }
         },
         {
+            "atomType": "GitHubMolecule",
+            "name": "M3x30 Bolt",
+            "x": 0.5064935064935064,
+            "y": 0.6526717557251909,
+            "uniqueID": 238125,
+            "projectID": "253144023",
+            "ioValues": []
+        },
+        {
             "atomType": "Rectangle",
             "name": "Rectangle",
             "x": 0.2062222222222222,
