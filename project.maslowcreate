@@ -43,6 +43,20 @@
                     ]
                 },
                 {
+                    "atomType": "Color",
+                    "name": "Color",
+                    "x": 0.5468521229868228,
+                    "y": 0.3511450381679389,
+                    "uniqueID": 838243,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "atoms/862685/472974/665432Extrude"
+                        }
+                    ],
+                    "selectedColorIndex": "5"
+                },
+                {
                     "atomType": "Extrude",
                     "name": "Extrude",
                     "x": 0.3909224011713031,
@@ -68,7 +82,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": "atoms/862685/472974/665432Extrude"
+                            "ioValue": "atoms/862685/472974/838243Color"
                         },
                         {
                             "name": "tag",
@@ -102,8 +116,15 @@
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
-                    "ap1ID": 665432,
+                    "ap1ID": 838243,
                     "ap2ID": 773276
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 665432,
+                    "ap2ID": 838243
                 },
                 {
                     "ap1Name": "geometry",
@@ -708,6 +729,23 @@
             ]
         },
         {
+            "atomType": "ExtractTag",
+            "name": "Extract Tag",
+            "x": 0.6010248901903367,
+            "y": 0.3015267175572519,
+            "uniqueID": 644599,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/862685/750781Assembly"
+                },
+                {
+                    "name": "tag",
+                    "ioValue": "Plastic"
+                }
+            ]
+        },
+        {
             "atomType": "Rotate",
             "name": "Rotate",
             "x": 0.1903367496339678,
@@ -758,23 +796,6 @@
             ]
         },
         {
-            "atomType": "ExtractTag",
-            "name": "Extract Tag",
-            "x": 0.5300146412884335,
-            "y": 0.7633587786259541,
-            "uniqueID": 644599,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "atoms/862685/750781Assembly"
-                },
-                {
-                    "name": "tag",
-                    "ioValue": "Plastic"
-                }
-            ]
-        },
-        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9629629629629629,
@@ -783,7 +804,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "atoms/862685/750781Assembly"
+                    "ioValue": "atoms/862685/644599ExtractTag"
                 }
             ]
         }
@@ -805,17 +826,17 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": 750781,
-            "ap2ID": 628110
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": 750781,
             "ap2ID": 644599
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 644599,
+            "ap2ID": 628110
         },
         {
             "ap1Name": "geometry",
