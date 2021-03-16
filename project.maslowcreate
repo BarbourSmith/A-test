@@ -10,8 +10,8 @@
         {
             "atomType": "Molecule",
             "name": "Drive Gear",
-            "x": 0.3513909224011713,
-            "y": 0.4312977099236641,
+            "x": 0.35212298682284043,
+            "y": 0.4541984732824427,
             "uniqueID": 472974,
             "ioValues": [],
             "topLevel": false,
@@ -230,6 +230,32 @@
                     ]
                 },
                 {
+                    "atomType": "GitHubMolecule",
+                    "name": "Involute Gear",
+                    "x": 0.10323886639676114,
+                    "y": 0.6984732824427481,
+                    "uniqueID": 367728,
+                    "projectID": "307507544",
+                    "ioValues": [
+                        {
+                            "name": "Number Of Teeth",
+                            "ioValue": 29
+                        },
+                        {
+                            "name": "Circular Pitch",
+                            "ioValue": 3
+                        },
+                        {
+                            "name": "Pressure Angle",
+                            "ioValue": 20
+                        },
+                        {
+                            "name": "Clearance",
+                            "ioValue": 0
+                        }
+                    ]
+                },
+                {
                     "atomType": "Rotate",
                     "name": "Rotate",
                     "x": 0.5710102489019033,
@@ -250,32 +276,6 @@
                         },
                         {
                             "name": "z-axis degrees",
-                            "ioValue": 0
-                        }
-                    ]
-                },
-                {
-                    "atomType": "GitHubMolecule",
-                    "name": "Involute Gear",
-                    "x": 0.10834553440702782,
-                    "y": 0.7509578544061302,
-                    "uniqueID": 367728,
-                    "projectID": "307507544",
-                    "ioValues": [
-                        {
-                            "name": "Number Of Teeth",
-                            "ioValue": 29
-                        },
-                        {
-                            "name": "Circular Pitch",
-                            "ioValue": 3
-                        },
-                        {
-                            "name": "Pressure Angle",
-                            "ioValue": 20
-                        },
-                        {
-                            "name": "Clearance",
                             "ioValue": 0
                         }
                     ]
@@ -1048,18 +1048,18 @@
                     "ap2ID": 231667
                 },
                 {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 483888,
-                    "ap2ID": 805804
-                },
-                {
                     "ap1Name": "Geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 367728,
                     "ap2ID": 665432
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 483888,
+                    "ap2ID": 805804
                 },
                 {
                     "ap1Name": "geometry",
