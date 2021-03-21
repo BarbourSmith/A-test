@@ -139,8 +139,8 @@
         {
             "atomType": "Molecule",
             "name": "Hub",
-            "x": 0.08052708638360176,
-            "y": 0.4809160305343511,
+            "x": 0.08784773060029283,
+            "y": 0.5190839694656488,
             "uniqueID": 828552,
             "ioValues": [],
             "topLevel": false,
@@ -154,7 +154,7 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 10
+                            "ioValue": 10.5
                         }
                     ]
                 },
@@ -291,8 +291,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Bolts",
-                    "x": 0.5344070278184481,
-                    "y": 0.816793893129771,
+                    "x": 0.5322108345534408,
+                    "y": 0.8091603053435115,
                     "uniqueID": 252284,
                     "ioValues": [],
                     "topLevel": false,
@@ -419,15 +419,15 @@
                                 },
                                 {
                                     "name": "zDist",
-                                    "ioValue": 4.5
+                                    "ioValue": 4
                                 }
                             ]
                         },
                         {
                             "atomType": "GitHubMolecule",
                             "name": "M3 Locknut",
-                            "x": 0.10175695461200586,
-                            "y": 0.7595419847328244,
+                            "x": 0.09809663250366032,
+                            "y": 0.7366412213740459,
                             "uniqueID": 820351,
                             "projectID": "278794657",
                             "ioValues": []
